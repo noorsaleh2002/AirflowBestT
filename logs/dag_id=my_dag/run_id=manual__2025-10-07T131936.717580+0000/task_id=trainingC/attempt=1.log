@@ -1,0 +1,11 @@
+{"timestamp":"2025-10-07T13:20:13.831195Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-07T13:20:13.839345Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/mydag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-07T13:20:14.222864Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:20:14.224296Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:20:14.225173Z","level":"info","event":"Current task name:trainingC","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:20:14.226036Z","level":"info","event":"Dag name:my_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:20:14.228848Z","level":"info","event":"Done. Returned value was: 15","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-07T13:20:14.230084Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0199bed3-d192-77bb-ac73-43ef92b636ee'), task_id='trainingC', dag_id='my_dag', run_id='manual__2025-10-07T13:19:36.717580+00:00', try_number=1, dag_version_id=UUID('0199bed3-628c-7afd-a187-e7843604a8b1'), map_index=-1, hostname='a7f2f42bf3de', context_carrier={}, task=<Task(PythonOperator): trainingC>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 7, 13, 19, 49, 697976, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}
+{"timestamp":"2025-10-07T13:20:14.601689Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:20:14.603595Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:20:14.605945Z","level":"info","event":"Task operator:<Task(PythonOperator): trainingC>","logger":"task.stdout"}

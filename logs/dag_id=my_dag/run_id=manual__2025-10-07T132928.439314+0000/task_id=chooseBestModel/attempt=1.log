@@ -1,0 +1,16 @@
+{"timestamp":"2025-10-07T13:29:37.870624Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-07T13:29:37.875707Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/mydag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-07T13:29:38.161606Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.175387Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.178654Z","level":"info","event":"Current task name:chooseBestModel","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.191313Z","level":"info","event":"Dag name:my_dag","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.346282Z","level":"info","event":"Raw XCom values: [10, 3, None], types: [<class 'int'>, <class 'int'>, <class 'NoneType'>]","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.350322Z","level":"info","event":"Best accuracy after conversion: 10.0","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.346514Z","level":"info","event":"Done. Returned value was: accurate","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-07T13:29:38.346891Z","level":"info","event":"Branch into accurate","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2025-10-07T13:29:38.359771Z","level":"info","event":"Following branch {'accurate'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":152}
+{"timestamp":"2025-10-07T13:29:38.361926Z","level":"info","event":"Skipping tasks [('inaccurate', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":191}
+{"timestamp":"2025-10-07T13:29:38.456939Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":935}
+{"timestamp":"2025-10-07T13:29:38.591239Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.592265Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-07T13:29:38.593177Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): chooseBestModel>","logger":"task.stdout"}
