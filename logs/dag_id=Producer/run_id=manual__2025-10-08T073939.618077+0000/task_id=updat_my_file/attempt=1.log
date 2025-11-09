@@ -1,0 +1,11 @@
+{"timestamp":"2025-10-08T07:39:43.456847Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-08T07:39:43.473695Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/producer.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-08T07:39:43.914443Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/producer.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-08T07:39:44.250590Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-10-08T07:39:44.309787Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-10-08T07:39:44.330681Z","level":"info","event":"Current task name:updat_my_file","logger":"task.stdout"}
+{"timestamp":"2025-10-08T07:39:44.361833Z","level":"info","event":"Dag name:Producer","logger":"task.stdout"}
+{"timestamp":"2025-10-08T07:39:44.261932Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-08T07:39:44.887639Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-10-08T07:39:44.908933Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-10-08T07:39:44.917715Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): updat_my_file>","logger":"task.stdout"}

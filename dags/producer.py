@@ -16,7 +16,7 @@ catchup=False #donot want to run untrigger dags auto
     @task(outlets=[my_file])
     def updat_my_file():
         with open(my_file.uri,"a+")as f:
-            f.wirte("Producer update")
+            f.write("Producer update")
     
     updat_my_file()
 
